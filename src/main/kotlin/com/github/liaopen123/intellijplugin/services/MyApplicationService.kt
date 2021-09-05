@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.liaopen123.intellijplugin.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.liaopen123.intellijplugin.MyBundle
 
 class MyApplicationService {
 
