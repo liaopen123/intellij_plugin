@@ -1,10 +1,13 @@
 <idea-plugin>
     <id>com.github.liaopen123.intellijplugin</id>
-    <name>intellij_plugin</name>
+    <name>lph first template</name>
     <vendor>liaopen123</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -16,4 +19,8 @@
         <listener class="com.github.liaopen123.intellijplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider implementation="other.WizardTemplateProviderImpl" />
+    </extensions>
 </idea-plugin>
