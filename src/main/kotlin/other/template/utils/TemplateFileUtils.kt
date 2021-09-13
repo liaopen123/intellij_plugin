@@ -27,3 +27,7 @@ fun List<String>.toDir(srcDir: PsiDirectory): PsiDirectory {
     }
     return result
 }
+
+
+fun  activityName2Fragment(activityName:String)= activityName.replace("Activity","Fragment")
+fun  activityName2ViewPagerAdapterName(activityName:String)= activityName.replace("Activity","VPAdapter")
